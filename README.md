@@ -3,7 +3,7 @@ The Car Store is a web application built to manage the inventory and orders of c
 
 ------------- Features ----------------
 
-1. #CRUD Operations for Cars: 
+1. ##CRUD Operations for Cars: 
 Manage car data with fields such as:
 brand
 model
