@@ -24,3 +24,4 @@ const orderSchema = new Schema<Order>(
 const OrderModel = model<Order>("Order", orderSchema);
 
 export default OrderModel;
+
