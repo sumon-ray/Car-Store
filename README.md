@@ -52,5 +52,5 @@ Before running the project locally, ensure you have the following installed:
   
 - **MongoDB**: [Install MongoDB](https://www.mongodb.com/try/download/community) or use MongoDB Atlas for a cloud-based database.
 
-   ##git clone https://github.com/yourusername/car-store.git
-   ##cd car-store
+   git clone https://github.com/yourusername/car-store.git
+   cd car-store
