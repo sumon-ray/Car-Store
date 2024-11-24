@@ -18,16 +18,18 @@ const getSpecificCar = async (carId: string) => {
   return result;
 };
 
-// Update Car
-const updateCar = async (carId: string, data: Car) => {
-  try {
-    await CarModel.findByIdAndUpdate(carId, data, {
-      new: true,
-      runValidators: true,
-    });
-  } catch (error) {
-    console.log(error);
+export const updateCar = async (carId: string, data: Partial<Car>) => {
+  const updatedCar = await CarModel.findByIdAndUpdate(
+    carId,
+    { $set: data },
+    { new: true, runValidators: true },
+  );
+
+  if (!updatedCar) {
+    throw new Error("Car not found or update failed");
   }
+
+  return updatedCar;
 };
 
 // Delete Car

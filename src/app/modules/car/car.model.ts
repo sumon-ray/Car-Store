@@ -4,24 +4,27 @@ import { Car, carCategory } from "./car.interface";
 const carSchema = new Schema<Car>({
   brand: {
     type: String,
-    required: true,
+    required: [true, "Brand is required"],
   },
   model: {
     type: String,
-    required: true,
+    required: [true, "Model is required"],
   },
   year: {
     type: Number,
-    required: true,
+    required: [true, "Year is required"],
   },
   price: {
     type: Number,
-    required: true,
+    required: [true, "Price is required"],
     min: 1,
   },
   category: {
     type: String,
-    enum: Object.values(carCategory),
+    enum: {
+      values: Object.values(carCategory),
+      message: "Category must be one of the predefined values",
+    },
     required: true,
   },
   description: {

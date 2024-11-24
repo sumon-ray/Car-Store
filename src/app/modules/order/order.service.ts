@@ -47,7 +47,7 @@ const calculateRevenue = async () => {
     {
       $group: {
         _id: null,
-        totalRevenue: { $sum: "$totalPrice" }, // Sum up the totalPrice from all orders
+        totalRevenue: { $sum: "$totalPrice" },
       },
     },
   ]);

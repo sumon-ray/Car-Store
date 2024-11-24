@@ -42,7 +42,8 @@ export default [
       "prefer-const": "error",
       "no-console": "warn",
       "no-undef": "error",
-      "@typescript-eslint/no-require-imports": "off"
+      "@typescript-eslint/no-require-imports": "off",
+      // "@typescript-eslint/no-explicit-any": "warn"
     },
     ignores: ["dist/*", "node_modules/*"], // Exclude compiled and external files
   },
