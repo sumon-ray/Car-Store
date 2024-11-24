@@ -2,8 +2,7 @@
 The Car Store is a web application built to manage the inventory and orders of cars in a store. It provides an API that allows users to perform CRUD operations on car data, create orders, and manage car availability. This project uses Node.js, Express, MongoDB, and Mongoose.
 
 ------------- Features ----------------
-
-1. ##CRUD Operations for Cars: 
+#CRUD Operations for Cars: 
 Manage car data with fields such as:
 brand
 model
