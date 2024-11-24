@@ -27,32 +27,21 @@ The **Car Store** is a web application designed to manage the inventory and orde
 
 
 ## Technology Stack
-
-
 ### Backend
-
 - **Node.js**
-  
 - **Express.js**
-- 
 - **MongoDB** with **Mongoose ORM**
-- 
+  
 ### Validation
-
 - **Mongoose Schema Validation**
 - **Email and Quantity Validation**
 
-  
 ### Error Handling
-
-
-- Custom error handling for common issues like missing data or insufficient stock.
-  
+- Custom error handling for common issues like missing data or insufficient stock. 
 ## API Endpoints
 - **Car CRUD**: `/api/cars`
 - **Order CRUD**: `/api/orders`
 
- 
 ## Getting Started
 ### Prerequisites 
 
